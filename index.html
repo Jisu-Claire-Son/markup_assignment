@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Document</title>
+    <style>
+        header{display:flex;}
+        header button{background:0;border:0;padding:0;text-indent: -9999px;}
+        header button:focus{outline:0;}
+        header .btn_back{width:80px;height:80px;position:relative;}
+        header .btn_back::before{content:'';width:30px;height:30px;position:absolute;left:50%;top:50%;border-right:2px solid #000;border-bottom:2px solid #000;transform:translate(-50%,-50%) rotate(135deg);}
+        header .btn_back::after{content:'';width:42px;height:2px;position:absolute;right:20px;top:50%;transform:translateY(-50%);background:#000}
+        header .btn_close{width:50px;height:50px;position:relative;text-indent:-9999px;}
+        header .btn_close::before,header .btn_close::after{content:'';width:50px;height:1px;position:absolute;left:50%;top:50%;border-radius:4px;background:#000}
+        header .btn_close:before{transform:translate(-50%,-50%) rotate(-45deg)}
+        header .btn_close:after{transform:translate(-50%,-50%) rotate(45deg)}
+    </style>
+</head>
+<body>
+    <header>
+        <button class="btn_back">뒤로 가기</button>
+        <h1>구독 신청하기</h1>
+        <button class="btn_close">닫기</button>
+    </header>
+</body>
+</html>
