@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link rel="stylesheet" href="css/common.css">
+<title>Markup Test</title>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function(){
+        $('#header').load("inc/inc_header.html");
+    });   
+</script>
+<style>
+.content{padding:20px 15px;}
+.content .thumbnail{width:100%;height:230px;background:#c1c1c1;text-indent: -9999px;border-radius:16px;margin-bottom:40px;}
+.content h2{font-size:22px;font-family:var(--rg);letter-spacing:-0.4px;margin-bottom: 16px;}
+.content .sub_info{border-width:2px;border-style:solid; border-radius: 10px;border-image-source:linear-gradient(112deg, #ff41f2 -6%, #ee4814 93%);  border-image-slice: 1;background-image: linear-gradient(to bottom, #fff, #fff), linear-gradient(112deg, #ff41f2 -6%, #ee4814 93%);background-origin: border-box;background-clip: content-box, border-box;}
+.content .sub_info .sub_inner{padding:19px 20px;}
+.content .sub_info .sub_inner div{display:flex;justify-content:space-between;align-items:center;margin-bottom:5px;}
+.content .sub_info .sub_inner div:last-child{margin-bottom: 0;}
+.content .sub_info .sub_inner div .tit{font-size:14px;font-family:var(--bd);letter-spacing:-0.3px;}
+.content .sub_info .sub_inner div .desc{font-size:16px;line-height:22px;font-family:var(--bd);letter-spacing:-0.34px;}
+.content .sub_info .sub_inner div .desc .bold{font-size:20px;margin-right:2px;line-height:28px;font-family:var(--bd);letter-spacing:-0.6px;}
+.content .sub_info .sub_inner div .desc .medium{font-size:13px;line-height:1.38;font-family:var(--md);letter-spacing:-0.5px;}
+.content .sub_info .sub_inner div .disc_tit{font-size:12px;font-family:var(--md);letter-spacing:-0.6px;}
+.content .sub_info .sub_inner div .disc_desc{font-size:12px;font-family:var(--md);letter-spacing:-0.6px;}
+.content .sub_info .sub_inner div .disc_desc .underline{text-decoration:underline;margin:0 2px;}
+.content .sub_info .sub_inner div .disc_desc .pink{color:#f54573}
+.content .noti{text-align:center;margin:40px 0 55px;font-size:14px;font-family:var(--md);letter-spacing:-0.3px;line-height:1.43;}
+.btn_area{position:fixed;bottom:0;left:0;right:0;padding:15px;box-shadow: 0 -2px 10px 0 rgba(0, 0, 0, 0.05);}
+.btn_area .btn_on{width:100%;height:50px;border-radius: 8px; background-image: linear-gradient(98deg, #ff41f2 -7%, #ee4814 94%);border:0;font-size:18px;color:#fff;letter-spacing:-0.33px;font-family:var(--rg); line-height: 2.78;}
+</style>
+</head>
+<body>
+    <header id="header"></header>
+    <div class="content">
+        <div class="thumbnail">
+            더미 이미지 영역
+        </div>
+        <div class="sub_cont">
+            <h2>밀키트 구독</h2>
+            <div class="sub_info">
+                <div class="sub_inner">
+                    <div class="sub_period">
+                        <p class="tit">구독 기간</p>
+                        <p class="desc"><span class="bold">12</span>개월 <span class="medium">(21-12-07 ~ 22-12-07)</span></p>
+                    </div>
+                    <div class="sub_price">
+                        <p class="tit">결제 금액</p>
+                        <p class="desc"><span class="bold">50,000</span>원/월</p>
+                    </div>
+                    <div class="disc_price">
+                        <p class="disc_tit"><span class="icon">티몬 X 롯데카드</span></p>
+                        <p class="disc_desc">월<span class="underline">10,000원</span><span class="pink">청구할인</span></p>
+                    </div>
+                    <div class="sub_date">
+                        <p class="tit">정기 결제일</p>
+                        <p class="desc">매월<span class="bold">03</span>일</p>
+                    </div>
+                </div>
+            </div>
+            <p class="noti">구독 서비스 정보를 확인하였으며<br>구독을 신청하시겠습니까?</p>
+        </div>
+        <div class="btn_area">
+            <button class="btn_on">네, 구독을 신청합니다.</button>
+        </div>
+    </div>
+</body>
+</html>

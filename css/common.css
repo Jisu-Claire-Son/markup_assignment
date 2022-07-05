@@ -29,14 +29,14 @@
 
 *, html, body{margin:0;padding:0;}
 
-header{display:flex;align-items: center;justify-content:space-between;padding:15px;border-bottom: 1px solid #f27935;}
-header h1{font-size:19px;line-height:28px;letter-spacing:-0.01px;font-family:var(--md);}
-header button{background:0;border:0;padding:0;text-indent: -9999px;}
-header button:focus{outline:0;}
-header .btn_back{width:20px;height:20px;position:relative;}
-header .btn_back::before{content:'';width:10px;height:10px;position:absolute;left:50%;top:50%;border-right:2px solid #000;border-bottom:2px solid #000;transform:translate(-50%,-50%) rotate(135deg);}
-header .btn_back::after{content:'';width:15px;height:2px;position:absolute;right:2px;top:50%;transform:translateY(-50%);background:#000}
-header .btn_close{width:17px;height:17px;position:relative;text-indent:-9999px;}
-header .btn_close::before,header .btn_close::after{content:'';width:17px;height:2px;position:absolute;left:50%;top:50%;background:#000}
-header .btn_close:before{transform:translate(-50%,-50%) rotate(-45deg)}
-header .btn_close:after{transform:translate(-50%,-50%) rotate(45deg)}
+header .header{display:flex;align-items: center;justify-content:space-between;padding:15px;border-bottom: 1px solid #f27935;}
+header .header h1{font-size:19px;line-height:28px;letter-spacing:-1px;font-family:var(--md);}
+header .header button{background:0;border:0;padding:0;text-indent: -9999px;}
+header .header button:focus{outline:0;}
+header .header .btn_back{width:20px;height:20px;position:relative;}
+header .header .btn_back::before{content:'';width:10px;height:10px;position:absolute;left:50%;top:50%;border-right:2px solid #000;border-bottom:2px solid #000;transform:translate(-50%,-50%) rotate(135deg);}
+header .header .btn_back::after{content:'';width:15px;height:2px;position:absolute;right:2px;top:50%;transform:translateY(-50%);background:#000}
+header .header .btn_close{width:17px;height:17px;position:relative;text-indent:-9999px;}
+header .header .btn_close::before,header .btn_close::after{content:'';width:17px;height:2px;position:absolute;left:50%;top:50%;background:#000}
+header .header .btn_close:before{transform:translate(-50%,-50%) rotate(-45deg)}
+header .header .btn_close:after{transform:translate(-50%,-50%) rotate(45deg)}
